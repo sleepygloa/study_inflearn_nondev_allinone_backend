@@ -19,6 +19,15 @@ module.exports = function(sequelize, DataTypes){
         imageUrl:{
             type:DataTypes.STRING(300),
             allowNull : true
+        },
+        soldout:{
+            type:DataTypes.INTEGER(1),
+            allowNull : true,
+            defaultValue : 0,
+        },
+        type:{
+            type:DataTypes.STRING(50),
+            allowNull : true,
         }
     })
     return product;
